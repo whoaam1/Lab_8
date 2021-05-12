@@ -9,6 +9,7 @@ import ua.lviv.iot.cars.enums.Standard;
 
 @NoArgsConstructor
 @Data
+
 @EqualsAndHashCode(callSuper = true)
 
 public class Sedan extends Car {
