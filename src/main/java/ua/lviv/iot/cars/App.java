@@ -1,15 +1,21 @@
 package ua.lviv.iot.cars;
 
-import ua.lviv.iot.cars.enums.*;
+import ua.lviv.iot.cars.enums.Fuel;
+import ua.lviv.iot.cars.enums.Standard;
+import ua.lviv.iot.cars.enums.SortOrder;
 import ua.lviv.iot.cars.manager.CarManager;
-import ua.lviv.iot.cars.models.*;
+import ua.lviv.iot.cars.models.Car;
+import ua.lviv.iot.cars.models.Bmw;
+import ua.lviv.iot.cars.models.Daf;
+import ua.lviv.iot.cars.models.Mercedes;
+
 
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
                 Bmw bmw = new Bmw(2560.5f,  "Black", 5, Standard.EURO_5, 20.1f,
                         30000, Fuel.GASOLINE, 4, "Sedan", 80, "M5",
                         "Hydraulic");
@@ -28,7 +34,7 @@ public class App {
         CarManager carManager = new CarManager(listOfCars);
 
         System.out.println("Cars found by standard:");
-        CarManager.printCars(carManager.find_by_standard(Standard.EURO_5));
+        CarManager.printCars(carManager.findByStandard(Standard.EURO_5));
         System.out.print("\n");
 
         System.out.println("Cars sorted by price:");

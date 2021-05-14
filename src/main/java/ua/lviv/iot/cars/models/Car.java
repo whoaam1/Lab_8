@@ -8,6 +8,7 @@ import ua.lviv.iot.cars.enums.Standard;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor(access = AccessLevel.PUBLIC)
+@ToString(callSuper = true)
 
 public class Car {
     public Float weight;
@@ -18,18 +19,4 @@ public class Car {
     public Integer price;
     public Fuel fuel;
     public Integer numberOfWheels;
-
-    @Override
-    public String toString() {
-        return "Car{" +
-                "weight=" + weight +
-                ", color='" + color + '\'' +
-                ", volume=" + volume +
-                ", standardType=" + standardType +
-                ", engineCapacity=" + engineCapacity +
-                ", price=" + price +
-                ", fuel=" + fuel +
-                ", numberOfWheels=" + numberOfWheels +
-                '}';
-    }
 }
