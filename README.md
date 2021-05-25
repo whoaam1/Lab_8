@@ -1,15 +1,12 @@
-# Lab_9
-My Lab9 on java
+# Lab_10
 
-##Task
- 
-Create a REST service for one of the classes created in the previous laboratory work.
+## Task
 
-## Requirements
+Implement saving of one of the classes from 8-th lab in a table in a database using `spring.boot` and `spring.data`
 
-- Service should have implemented CRUD operations.
-- GET request without id in url-request should return the list of all available objects.
-- The controller and RestApplication class code must be placed in separate packages.
-- Saving class objects should be done in a Map object.
-- The code should be checked using Findbugs / checkstyle / pmd plugins.
-
+- 9-th lab code should be changed in such way, that permits saving/reading data to/from database.
+- Code should comply with code convention.
+- Code should be checked with findbugs, pmd and checkstyle plugins.
+- A separate pull request should be created.
+- Code must contain separate `Controller`, `Service` classes and `Repository` interface.
+- Configuration of database accessing should be done through properties file.
