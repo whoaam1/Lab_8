@@ -1,15 +1,15 @@
-# Lab_8
-My Lab8 on java
+# Lab_9
+My Lab9 on java
 
-Task
+##Task
  
-Write code for UML diagram from lab 2
-My lab 2 task:
+Create a REST service for one of the classes created in the previous laboratory work.
 
-To form a hierarchy of cars on the market by categories (trucks, cars, minivans, beads, etc.). Implement a customer search for cars by parameters (for example, cars that meet the standard of Euro-5 or Euro-6, with a diesel engine, year of manufacture, etc.). Display the results of the engine volume
-Implement the ability to sort found cars by another type of parameter (optional, implemented as a separate method)
-The implementation of sorting should provide the ability to sort both in descending and ascending order
+## Requirements
 
-Class diagram:
-https://drive.google.com/drive/u/0/my-drive
+- Service should have implemented CRUD operations.
+- GET request without id in url-request should return the list of all available objects.
+- The controller and RestApplication class code must be placed in separate packages.
+- Saving class objects should be done in a Map object.
+- The code should be checked using Findbugs / checkstyle / pmd plugins.
 
